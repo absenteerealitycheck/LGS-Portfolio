@@ -6,3 +6,6 @@ body{
  	color: green;
  	background-color: black;
  }
+ p {
+ 	margin: 20% auto;
+ }
