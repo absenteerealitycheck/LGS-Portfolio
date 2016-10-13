@@ -9,3 +9,27 @@ body{
  p {
  	margin: auto 20%;
  }
+
+ #container h1,p{
+  text-align:center;
+}
+
+button {
+  width: 20% !important;
+  margin:0 40% !important;
+}
+li{
+  text-align:justify;
+  list-style:none;
+}
+ul{
+  margin-top: 10%;
+}
+.heading{
+  margin-top: 5%;
+  font-weight: bold;
+}
+select{
+  margin:2% 10% !important;
+  width:80%;
+}
