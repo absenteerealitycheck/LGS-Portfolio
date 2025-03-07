@@ -1,31 +1,32 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 import { Card, CardBody, CardFooter, Divider } from "@heroui/react";
+import Image from "next/image";
 import { BiSolidChevronRight } from "react-icons/bi";
+import ContactForm from "./ContactForm";
 import ExperienceSection from "./ExperienceSection";
+import ResumeDownloadButton from "./ResumeDownloadButton";
 import SkillsSection from "./SkillsSection";
 import TypingMovingText from "./TypingMovingText";
-import ContactForm from "./ContactForm";
 export default function PortfolioContent() {
   return (
     <>
-      <section
-        id="Home"
-        className="my-40 mx-8 w-full pt-20 pb-16"
-        style={{ backgroundColor: "rgba(0,0,0,0.8)" }}
-      >
-        <h2 className="text-center text-5xl font-bold text-white">
-          I am Lexie Gaines-Smith
-        </h2>
-        <div className="my-6 text-center text-violet-400">
-          <TypingMovingText text="Full Stack Software Engineer" />
-        </div>
-      </section>
-
+      <div className="w-full h-full pt-2 bg-black bg-[url('/bg.svg')] bg-no-repeat bg-center pb-16 bg-auto">
+        <section
+          id="Home"
+          className="my-40 mx-8 w-full pt-20 pb-16"
+          style={{ backgroundColor: "rgba(0,0,0,0.1)" }}
+        >
+          <h2 className="text-center text-8xl font-bold font-sans text-white">
+            I am Lexie Gaines-Smith
+          </h2>
+          <div className="my-6 text-center text-violet-400 font-mono">
+            <TypingMovingText text="Full Stack Software Engineer" />
+          </div>
+        </section>
+      </div>
       <section
         id="About"
-        className="bg-black text-white my-20 w-full px-24 py-20"
+        className="bg-neutral-800 text-white  w-full px-24 pt-20 pb-40 "
       >
         <h2 className="text-center text-3xl">About Me</h2>
         <Divider className="my-4 border-lime-400"></Divider>
@@ -120,20 +121,10 @@ export default function PortfolioContent() {
       </section>
       <section
         id="Experience"
-        className="mb-20 mt-6 w-full px-24 py-10 bg-violet-50"
+        className="pt-20 w-full px-24 pb-40 bg-violet-50"
       >
         <ExperienceSection />
-        <div className="flex flex-row justify-center mt-6">
-          <button
-            className="mt-4 bg-lime-400 p-2 rounded-lg"
-            onClick={() => {
-              //14vhiqdGSuSf_zWL0qUsxKF4al9EA5EdU
-              //https://www.googleapis.com/drive/v3/files/{file_id}?alt=media
-            }}
-          >
-            Download My Resume
-          </button>
-        </div>
+        <ResumeDownloadButton />
       </section>
       <section id="Skills" className="py-8 bg-black text-white w-full px-24">
         <SkillsSection />
@@ -273,10 +264,7 @@ export default function PortfolioContent() {
           </Card>
         </div>
       </div>
-      <section
-        id="Contact"
-        className="bg-black text-white my-20 w-full px-24 py-20"
-      >
+      <section id="Contact" className="bg-black text-white w-full px-24 py-40">
         <h2 className="text-center text-3xl">Contact Me</h2>
         <ContactForm />
       </section>

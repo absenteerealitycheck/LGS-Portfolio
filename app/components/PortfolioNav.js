@@ -6,20 +6,48 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
+  NavbarMenuToggle,
 } from "@heroui/react";
-import { GiHamburgerMenu, GiCancel } from "react-icons/gi";
 import classnames from "classnames";
+import { GiCancel, GiHamburgerMenu } from "react-icons/gi";
 
 export default function PortfolioNavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pages = ["Home", "About", "Experience", "Skills", "Contact"];
 
   const isInView = (element) => {
+    // Return false if element doesn't exist
+    if (!element) return false;
+
+    // Get the bounding rectangle of the element
     const rect = element.getBoundingClientRect();
-    return rect.top >= -40 && rect.bottom <= window?.innerHeight;
+
+    // Get viewport dimensions
+    const windowHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+    const windowWidth =
+      window.innerWidth || document.documentElement.clientWidth;
+
+    // Calculate the visible area of the element
+    const visibleHeight =
+      Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+    const visibleWidth =
+      Math.min(rect.right, windowWidth) - Math.max(rect.left, 0);
+
+    // If the element is not visible at all, return false
+    if (visibleHeight <= 0 || visibleWidth <= 0) return false;
+
+    // Calculate total area and visible area
+    const totalArea = rect.height * rect.width;
+    const visibleArea = visibleHeight * visibleWidth;
+
+    // Calculate the percentage of the element that is visible
+    const visiblePercentage = (visibleArea / totalArea) * 100;
+
+    // Return true if more than 20% is visible
+    return visiblePercentage > 35;
   };
 
   const scrollTo = (elem) =>
@@ -49,7 +77,7 @@ export default function PortfolioNavBar() {
   };
 
   React.useEffect(() => {
-    const timer = setInterval(() => spy(), 1000);
+    const timer = setInterval(() => spy(), 350);
     return () => clearInterval(timer);
   });
 
@@ -63,8 +91,8 @@ export default function PortfolioNavBar() {
     >
       <NavbarBrand className="w-full">
         <img
-          src="/LGSlogo-purple.png"
-          width="200px"
+          src="/NewLGSLogo.png"
+          width="100px"
           height="auto"
           alt="LGS Personal Logo"
         />
