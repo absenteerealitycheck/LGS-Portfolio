@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const TypingMovingText = ({ text }) => {
   const [displayedText, setDisplayedText] = useState("");
@@ -27,13 +27,11 @@ const TypingMovingText = ({ text }) => {
 
   // Toggle cursor blinking effect only after the text is all visible
   useEffect(() => {
-    if (currentIndex < text.length) {
-      const cursorInterval = setInterval(() => {
-        setDisplayCursor((prev) => !prev);
-      }, 500);
+    const cursorInterval = setInterval(() => {
+      setDisplayCursor((prev) => !prev);
+    }, 500);
 
-      return () => clearInterval(cursorInterval);
-    }
+    return () => clearInterval(cursorInterval);
   });
 
   return (
