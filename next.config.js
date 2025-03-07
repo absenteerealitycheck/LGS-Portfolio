@@ -1,16 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "github.com",
-        port: "",
-        pathname: "/absenteerealitycheck/absenteerealitycheck.github.io/*",
-        search: "",
-      },
-    ],
-  },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
