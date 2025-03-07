@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import { useRef } from "react";
 
 export default function BackToTopButton() {
   const buttonRef = useRef(null);
@@ -19,10 +19,19 @@ export default function BackToTopButton() {
 
   return (
     <button
+      tabIndex={10}
       ref={buttonRef}
+      aria-label="Go Back To Top Button"
+      role="button"
       onClick={() => {
         typeof window !== undefined &&
           window.scrollTo({ top: 0, behavior: "smooth" });
+      }}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.keyCode === 13) {
+          typeof window !== undefined &&
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
       }}
       type="button"
       className="!fixed bottom-5 end-5 hidden rounded-full bg-lime-400 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-violet-400 hover:shadow-lg focus:bg-violet-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-violet-600 active:shadow-lg"

@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { Divider } from "@heroui/react";
 
 export default function ExperienceSection() {
@@ -8,10 +7,10 @@ export default function ExperienceSection() {
       <h2 className="text-center text-3xl">Experience</h2>
       <Divider className="mt-4 mb-8 border-lime-400"></Divider>
       <div className="px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
-        <h4 className="pb-2 uppercase font-semibold text-stone-700">
+        <h3 className="pb-2 uppercase font-semibold text-stone-700">
           MMSD Software Developer
-        </h4>
-        <h5 className="pb-1 text-sm font-semibold">July 2019 - Present</h5>
+        </h3>
+        <h4 className="pb-1 text-sm font-semibold">July 2019 - Present</h4>
         <p className="pb-2 text-sm">
           <em>MassMutual Life Insurance, Boston, MA</em>
         </p>
@@ -37,11 +36,11 @@ export default function ExperienceSection() {
         </ul>
       </div>
       <div className="px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
-        <h4 className="pb-2 uppercase font-semibold text-stone-700">
+        <h3 className="pb-2 uppercase font-semibold text-stone-700">
           {" "}
           Product Software Engineer
-        </h4>
-        <h5 className="pb-1 text-sm font-semibold">March 2015 - June 2019</h5>
+        </h3>
+        <h4 className="pb-1 text-sm font-semibold">March 2015 - June 2019</h4>
         <p className="pb-2 text-sm">
           <em>eResearch Technology(formerly PHT Corporation), Boston, MA</em>
         </p>
@@ -58,12 +57,12 @@ export default function ExperienceSection() {
         </ul>
       </div>
       <div className="px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
-        <h4 className="pb-2 uppercase font-semibold text-stone-700">
+        <h3 className="pb-2 uppercase font-semibold text-stone-700">
           UX Intern
-        </h4>
-        <h5 className="pb-1 text-sm font-semibold">
+        </h3>
+        <h4 className="pb-1 text-sm font-semibold">
           June 2013 - September 2013
-        </h5>
+        </h4>
         <p className="pb-2 text-sm">
           <em>Marketade, Washington, DC</em>
         </p>
@@ -83,12 +82,12 @@ export default function ExperienceSection() {
         </ul>
       </div>
       <div className="px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
-        <h4 className="pb-2 uppercase font-semibold text-stone-700">
+        <h3 className="pb-2 uppercase font-semibold text-stone-700">
           New Media Intern
-        </h4>
-        <h5 className="pb-1 text-sm font-semibold">
+        </h3>
+        <h4 className="pb-1 text-sm font-semibold">
           June 2012 - September 2012
-        </h5>
+        </h4>
         <p className="pb-2 text-sm">
           <em>The College Board, Reston, VA</em>
         </p>
@@ -106,10 +105,10 @@ export default function ExperienceSection() {
         </ul>
       </div>
       <div className="px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
-        <h4 className="pb-2 uppercase font-semibold text-stone-700">
+        <h3 className="pb-2 uppercase font-semibold text-stone-700">
           Web Design and Development Intern
-        </h4>
-        <h5 className="pb-1 text-sm font-semibold">June 2011 - August 2011</h5>
+        </h3>
+        <h4 className="pb-1 text-sm font-semibold">June 2011 - August 2011</h4>
         <p className="pb-2 text-sm">
           <em>Yes Exactly, Greenfield, MA</em>
         </p>

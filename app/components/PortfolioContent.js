@@ -16,9 +16,9 @@ export default function PortfolioContent() {
           className="my-40 mx-8 w-full pt-20 pb-16"
           style={{ backgroundColor: "rgba(0,0,0,0.1)" }}
         >
-          <h2 className="text-center text-8xl font-bold font-sans text-white">
+          <h1 className="text-center text-8xl font-bold font-sans text-white">
             I am Lexie Gaines-Smith
-          </h2>
+          </h1>
           <div className="my-6 text-center text-violet-400 font-mono">
             <TypingMovingText text="Full Stack Software Engineer" />
           </div>
@@ -130,9 +130,9 @@ export default function PortfolioContent() {
         <SkillsSection />
       </section>
       <div className="flex flex-row flex-wrap text-center content-center justify-center w-full px-0 bg-violet-200 pb-24">
-        <p className="text-black text-lg font-semibold center-self my-4 px-24">
+        <h3 className="text-black text-lg font-semibold center-self my-4 px-24">
           Examples of my work
-        </p>
+        </h3>
         <div className="gap-2 grid xl:grid-cols-4 lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 xs:grid-cols-1 px-24">
           <Card key="0" shadow="sm">
             <CardBody className="overflow-visible p-0">

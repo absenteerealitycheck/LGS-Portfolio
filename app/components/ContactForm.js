@@ -40,6 +40,7 @@ export default function ContactForm() {
             Name
           </label>
           <input
+            tabIndex={6}
             type="text"
             placeholder="Name"
             className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
@@ -54,7 +55,9 @@ export default function ContactForm() {
             Email Address
           </label>
           <input
+            tabIndex={7}
             type="email"
+            aria-label="email form field"
             placeholder="example@domain.com"
             className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
             {...register("email", { required: true })}
@@ -68,6 +71,7 @@ export default function ContactForm() {
             Message
           </label>
           <textarea
+            tabIndex={8}
             rows={4}
             placeholder="Type your message"
             className="w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
@@ -77,6 +81,8 @@ export default function ContactForm() {
         <div>
           {isSubmitting ? (
             <button
+              role="button"
+              aria-label="Message from contact form is sending"
               className="bg-lime-400  text-white font-semibold py-3 px-8 rounded-md focus:outline-none focus:shadow-outline flex items-center"
               disabled
             >
@@ -103,7 +109,12 @@ export default function ContactForm() {
               Loading...
             </button>
           ) : (
-            <button className="hover:shadow-form hover:bg-lime-400 rounded-md bg-[#A89AE2] py-3 px-8 text-base font-semibold text-white outline-none">
+            <button
+              tabIndex={9}
+              role="button"
+              aria-label="Submit Message For Contacting LGS"
+              className="hover:shadow-form hover:bg-lime-400 rounded-md bg-violet-600 py-3 px-8 text-base font-semibold text-white outline-none"
+            >
               Submit
             </button>
           )}

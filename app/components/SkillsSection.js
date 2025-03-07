@@ -1,40 +1,39 @@
 "use client";
-import React from "react";
 import { Divider } from "@heroui/react";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { TiHtml5 } from "react-icons/ti";
-import { DiRedis } from "react-icons/di";
+import { IconContext } from "react-icons";
 import {
+  BiLogoAws,
+  BiLogoBootstrap,
+  BiLogoDocker,
   BiLogoJava,
-  BiLogoPython,
   BiLogoJavascript,
+  BiLogoKubernetes,
   BiLogoMongodb,
   BiLogoNodejs,
-  BiLogoKubernetes,
-  BiLogoDocker,
-  BiLogoAws,
   BiLogoPostgresql,
-  BiLogoBootstrap,
+  BiLogoPython,
 } from "react-icons/bi";
+import { DiRedis } from "react-icons/di";
+import { FaGithub, FaLess } from "react-icons/fa";
+import { FaJenkins, FaReact } from "react-icons/fa6";
 import { IoLogoMarkdown, IoLogoSass } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
 import {
-  SiGo,
-  SiTerraform,
   SiAmazonelasticache,
   SiBackbonedotjs,
+  SiGo,
   SiHelm,
-  SiWebpack,
   SiSqlite,
+  SiTerraform,
+  SiWebpack,
 } from "react-icons/si";
-import { FaJenkins, FaReact } from "react-icons/fa6";
-import { FaGithub, FaLess } from "react-icons/fa";
 import {
   TbBrandBitbucketFilled,
-  TbBrandFigma,
   TbBrandCss3,
+  TbBrandFigma,
   TbBrandNextjs,
 } from "react-icons/tb";
-import { IconContext } from "react-icons";
+import { TiHtml5 } from "react-icons/ti";
 export default function SkillsSection() {
   return (
     <>
@@ -52,39 +51,39 @@ export default function SkillsSection() {
           </p>
           <div className="flex flex-row flex-wrap my-6">
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <BiLogoNodejs />
+              <BiLogoNodejs aria-label="Node.js Logo" />
               NodeJS
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <TbBrandNextjs />
+              <TbBrandNextjs aria-label="NextJs Logo" />
               NextJS
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <FaReact />
+              <FaReact aria-label="ReactJS Logo" />
               ReactJS
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <TiHtml5 />
+              <TiHtml5 aria-label="HTML5 Logo" />
               HTML
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <BiLogoJavascript />
+              <BiLogoJavascript aria-label="Javascript Logo" />
               ES2024
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <SiBackbonedotjs />
+              <SiBackbonedotjs aria-label="Backbone.js Logo" />
               Backbone.js
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <BiLogoPython />
+              <BiLogoPython aria-label="Python Logo" />
               Python
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <BiLogoJava />
+              <BiLogoJava aria-label="Java Logo" />
               Java
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2 text-center">
-              <SiGo />
+              <SiGo aria-label="Go Logo" />
               Go
             </div>
           </div>
@@ -92,31 +91,31 @@ export default function SkillsSection() {
           <p className="mt-8 font-semibold text-lg">Styling</p>
           <div className="flex flex-row flex-wrap my-6">
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <TbBrandCss3 />
+              <TbBrandCss3 aria-label="CSS3 Logo" />
               CSS3
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <RiTailwindCssFill />
+              <RiTailwindCssFill aria-label="TailwindCSS Logo" />
               TailwindCSS
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <FaLess />
+              <FaLess aria-label="Less Logo" />
               Less
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <IoLogoSass />
+              <IoLogoSass aria-label="Sass Logo" />
               Sass
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <BiLogoBootstrap />
+              <BiLogoBootstrap aria-label="Bootstrap Logo" />
               Bootstrap
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <IoLogoMarkdown />
+              <IoLogoMarkdown aria-label="Markdown Logo" />
               Markdown
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <TbBrandFigma />
+              <TbBrandFigma aria-label="Figma Logo" />
               Figma
             </div>
           </div>
@@ -126,23 +125,23 @@ export default function SkillsSection() {
           </p>
           <div className="flex flex-row flex-wrap my-6">
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <BiLogoPostgresql />
+              <BiLogoPostgresql aria-label="Postgres SQL Logo" />
               Postgres
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <DiRedis />
+              <DiRedis aria-label="Redis Logo" />
               Redis
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <SiAmazonelasticache />
+              <SiAmazonelasticache aria-label="AWS Elasticache Logo" />
               Elasticache
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <SiSqlite />
+              <SiSqlite aria-label="Sqlite Logo" />
               Sqlite
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <BiLogoMongodb />
+              <BiLogoMongodb aria-label="Mongodb Logo" />
               Mongodb
             </div>
           </div>
@@ -152,39 +151,39 @@ export default function SkillsSection() {
           </p>
           <div className="flex flex-row flex-wrap my-6">
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <SiWebpack />
+              <SiWebpack aria-label="Webpack Logo" />
               Webpack
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <BiLogoDocker />
+              <BiLogoDocker aria-label="Docker Logo" />
               Docker
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <FaJenkins />
+              <FaJenkins aria-label="Jenkins Logo" />
               Jenkins
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <SiHelm />
+              <SiHelm aria-label="Helm Logo" />
               Helm
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <SiTerraform />
+              <SiTerraform aria-label="Terraform Logo" />
               Terraform
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <BiLogoKubernetes />
+              <BiLogoKubernetes aria-label="Kubernetes Logo" />
               Kubernetes
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <BiLogoAws />
+              <BiLogoAws aria-label="AWS Logo" />
               AWS Cloud
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <FaGithub />
+              <FaGithub aria-label="Github Logo" />
               Github
             </div>
             <div className="flex-col content-center justify-items-center mx-2 my-2">
-              <TbBrandBitbucketFilled />
+              <TbBrandBitbucketFilled aria-label="Bitbucket Logo" />
               Bitbucket
             </div>
           </div>

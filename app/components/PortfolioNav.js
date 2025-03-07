@@ -120,12 +120,23 @@ export default function PortfolioNavBar() {
       </NavbarMenu>
       {/** Mobile Nav Items Begin */}
       {/** Full-size Nav Items Begin */}
-      <NavbarContent className="hidden sm:flex gap-6" justify="center">
+      <NavbarContent
+        className="hidden sm:flex gap-6"
+        justify="center"
+        role="menubar"
+      >
         {items.map((p, i) => {
           return (
             <NavbarItem
+              role="menuitem"
               key={i}
+              tabIndex={i}
               onClick={() => scrollTo(p.element)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.keyCode === 13) {
+                  scrollTo(p.element);
+                }
+              }}
               className={classnames(
                 "flex",
                 "w4",
