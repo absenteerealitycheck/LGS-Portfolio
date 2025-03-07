@@ -25,7 +25,6 @@ const TypingMovingText = ({ text }) => {
     }
   }, [currentIndex, text]);
 
-  // Toggle cursor blinking effect only after the text is all visible
   useEffect(() => {
     const cursorInterval = setInterval(() => {
       setDisplayCursor((prev) => !prev);
