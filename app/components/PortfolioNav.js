@@ -26,9 +26,11 @@ export default function PortfolioNavBar() {
 
     // Get viewport dimensions
     const windowHeight =
-      window.innerHeight || document.documentElement.clientHeight;
+      (typeof window !== undefined && window.innerHeight) ||
+      document.documentElement.clientHeight;
     const windowWidth =
-      window.innerWidth || document.documentElement.clientWidth;
+      (typeof window !== undefined && window.innerWidth) ||
+      document.documentElement.clientWidth;
 
     // Calculate the visible area of the element
     const visibleHeight =

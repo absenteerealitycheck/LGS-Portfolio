@@ -142,8 +142,8 @@ export default function PortfolioContent() {
                 radius="lg"
                 shadow="sm"
                 src="/portfolio/dfjb-v1.jpg"
-                width={window?.innerWidth / 6}
-                height={window?.innerHeight / 18}
+                width={typeof window !== undefined && window?.innerWidth / 6}
+                height={typeof window !== undefined && window?.innerHeight / 18}
               />
             </CardBody>
             <CardFooter className="text-md text-white font-semibold">
@@ -158,8 +158,8 @@ export default function PortfolioContent() {
                 radius="lg"
                 shadow="sm"
                 src="/portfolio/locavore-v1.jpg"
-                width={window?.innerWidth / 6}
-                height={window?.innerHeight / 18}
+                width={typeof window !== undefined && window?.innerWidth / 6}
+                height={typeof window !== undefined && window?.innerHeight / 18}
               />
             </CardBody>
             <CardFooter className="text-md text-white font-semibold">
@@ -174,8 +174,8 @@ export default function PortfolioContent() {
                 radius="lg"
                 shadow="sm"
                 src="/portfolio/maggiddavid-v1.jpg"
-                width={window?.innerWidth / 6}
-                height={window?.innerHeight / 18}
+                width={typeof window !== undefined && window?.innerWidth / 6}
+                height={typeof window !== undefined && window?.innerHeight / 18}
               />
             </CardBody>
             <CardFooter className="text-md text-white font-semibold">
@@ -190,8 +190,8 @@ export default function PortfolioContent() {
                 radius="lg"
                 shadow="sm"
                 src="/portfolio/peace-corps-voices-v1-2.jpg"
-                width={window?.innerWidth / 6}
-                height={window?.innerHeight / 18}
+                width={typeof window !== undefined && window?.innerWidth / 6}
+                height={typeof window !== undefined && window?.innerHeight / 18}
               />
             </CardBody>
             <CardFooter className="text-md text-white font-semibold">
@@ -206,8 +206,8 @@ export default function PortfolioContent() {
                 radius="lg"
                 shadow="sm"
                 src="/portfolio/rise-v1.jpg"
-                width={window?.innerWidth / 6}
-                height={window?.innerHeight / 18}
+                width={typeof window !== undefined && window?.innerWidth / 6}
+                height={typeof window !== undefined && window?.innerHeight / 18}
               />
             </CardBody>
             <CardFooter className="text-md text-white font-semibold">
@@ -222,8 +222,8 @@ export default function PortfolioContent() {
                 radius="lg"
                 shadow="sm"
                 src="/portfolio/quote_machine.png"
-                width={window?.innerWidth / 6}
-                height={window?.innerHeight / 18}
+                width={typeof window !== undefined && window?.innerWidth / 6}
+                height={typeof window !== undefined && window?.innerHeight / 18}
               />
             </CardBody>
             <CardFooter className="text-md text-white font-semibold">
@@ -238,8 +238,8 @@ export default function PortfolioContent() {
                 radius="lg"
                 shadow="sm"
                 src="/portfolio/name generator.png"
-                width={window?.innerWidth / 6}
-                height={window?.innerHeight / 18}
+                width={typeof window !== undefined && window?.innerWidth / 6}
+                height={typeof window !== undefined && window?.innerHeight / 18}
               />
             </CardBody>
             <CardFooter className="text-md text-white font-semibold">
@@ -254,8 +254,8 @@ export default function PortfolioContent() {
                 radius="lg"
                 shadow="sm"
                 src="/portfolio/thematizer-v21.jpg"
-                width={window?.innerWidth / 6}
-                height={window?.innerHeight / 18}
+                width={typeof window !== undefined && window?.innerWidth / 6}
+                height={typeof window !== undefined && window?.innerHeight / 18}
               />
             </CardBody>
             <CardFooter className="text-md text-white font-semibold">
