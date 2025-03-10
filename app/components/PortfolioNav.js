@@ -101,7 +101,7 @@ export default function PortfolioNavBar() {
       </NavbarBrand>
       {/** Mobile Nav Items Begin */}
       <NavbarMenu
-        className="bg-black text-white z-90 w-full center-content text-center fixed"
+        className="bg-black text-white z-90 w-full center-content text-center fixed mt-8"
         portalContainer={
           typeof window !== "undefined" &&
           document?.getElementById("nav-container")

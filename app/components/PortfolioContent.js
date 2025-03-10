@@ -10,23 +10,19 @@ import TypingMovingText from "./TypingMovingText";
 export default function PortfolioContent() {
   return (
     <>
-      <div className="w-full h-full pt-2 bg-black bg-[url('/bg.svg')] bg-no-repeat bg-center pb-16 bg-auto">
-        <section
-          id="Home"
-          className="my-40 mx-8 w-full pt-20 pb-16"
-          style={{ backgroundColor: "rgba(0,0,0,0.1)" }}
-        >
+      <section id="Home" className="lg:mx-8 md:mx-4 sm:mx-1 w-full  bg-black">
+        <div className="w-full lg:mt-40 md:mt-20 sm:mt-10  h-full bg-black bg-[url('/bg.svg')] bg-no-repeat bg-center bg-auto lg:pt-20 md:pt-16 sm:pt-6 pb-20">
           <h1 className="text-center text-8xl font-bold font-sans text-white">
             I am Lexie Gaines-Smith
           </h1>
-          <div className="my-6 text-center text-violet-400 font-mono">
-            <TypingMovingText text="Full Stack Software Engineer" />
-          </div>
-        </section>
-      </div>
+        </div>
+        <div className="lg:mb-48 md:mb-20 sm:mb-10 lg:py-6 md:py-6 sm:pb-14 text-center text-violet-400 font-mono bg-black">
+          <TypingMovingText text="Full Stack Software Engineer" />
+        </div>
+      </section>
       <section
         id="About"
-        className="bg-neutral-800 text-white  w-full px-24 pt-20 pb-40 "
+        className="bg-neutral-800 text-white  w-full px-24 pt-20 pb-40 scroll-m-8 "
       >
         <h2 className="text-center text-3xl">About Me</h2>
         <Divider className="my-4 border-lime-400"></Divider>
@@ -121,12 +117,15 @@ export default function PortfolioContent() {
       </section>
       <section
         id="Experience"
-        className="pt-20 w-full px-24 pb-40 bg-violet-50"
+        className="scroll-m-8 pt-20 w-full px-24 pb-40 bg-violet-50"
       >
         <ExperienceSection />
         <ResumeDownloadButton />
       </section>
-      <section id="Skills" className="py-8 bg-black text-white w-full px-24">
+      <section
+        id="Skills"
+        className="scroll-m-16 py-8 bg-black text-white w-full px-24"
+      >
         <SkillsSection />
       </section>
       <div className="flex flex-row flex-wrap text-center content-center justify-center w-full px-0 bg-violet-200 pb-24">
@@ -264,7 +263,10 @@ export default function PortfolioContent() {
           </Card>
         </div>
       </div>
-      <section id="Contact" className="bg-black text-white w-full px-24 py-40">
+      <section
+        id="Contact"
+        className="scroll-m-6 bg-black text-white w-full px-24 py-40"
+      >
         <h2 className="text-center text-3xl">Contact Me</h2>
         <ContactForm />
       </section>

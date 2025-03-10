@@ -34,7 +34,7 @@ const TypingMovingText = ({ text }) => {
   });
 
   return (
-    <div className="text-2xl center-content">
+    <div className="lg:text-2xl md:text-2xl sm:text-2xl center-content">
       {displayedText}
       <span
         className={`center-self inline-block w-[2px] h-6 bg-white ml-1 ${
