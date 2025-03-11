@@ -10,15 +10,16 @@ import TypingMovingText from "./TypingMovingText";
 export default function PortfolioContent() {
   return (
     <>
-      <section id="Home" className="lg:mx-8 md:mx-4 sm:mx-1 w-full  bg-black">
-        <div className="w-full lg:mt-40 md:mt-20 sm:mt-10  h-full bg-black bg-[url('/bg.svg')] bg-no-repeat bg-center bg-auto lg:pt-20 md:pt-16 sm:pt-6 pb-20">
-          <h1 className="text-center text-8xl font-bold font-sans text-white">
-            I am Lexie Gaines-Smith
-          </h1>
-        </div>
-        <div className="lg:mb-48 md:mb-20 sm:mb-10 lg:py-6 md:py-6 sm:pb-14 text-center text-violet-400 font-mono bg-black">
-          <TypingMovingText text="Full Stack Software Engineer" />
-        </div>
+      <section
+        id="Home"
+        className="lg:mx-8 md:mx-4 sm:mx-1 w-full h-[100vh] bg-black bg-[url('/bg.svg')] bg-no-repeat bg-center bg-contain content-center"
+      >
+        <h1 className="h-full content-center text-center lg:text-9xl md:text-8xl sm:text-8xl text-6xl font-bold font-sans text-white">
+          I am Lexie Gaines-Smith
+          <div className="mt-4 text-center text-violet-300 lg:text-6xl md:text-4xl sm:text-4xl text-xl font-mono">
+            <TypingMovingText text="Full Stack Software Engineer" />
+          </div>
+        </h1>
       </section>
       <section
         id="About"
