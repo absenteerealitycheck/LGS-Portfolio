@@ -281,6 +281,26 @@ export default function PortfolioContent() {
               <b>Thematizer Prototype (2011)</b>
             </CardFooter>
           </Card>
+          <Card
+            key="8"
+            shadow="sm"
+            isPressable={true}
+            onPress={() => window.open("https://1qcb56.axshare.com/", "_blank")}
+          >
+            <Image
+              alt="Axure Admin Dashboard Prototype"
+              className="w-full object-cover"
+              radius="lg"
+              shadow="sm"
+              src="/portfolio/tae-v1.gif"
+              width={typeof window !== undefined && window?.innerWidth}
+              height={typeof window !== undefined && window?.innerHeight / 2}
+            />
+
+            <CardFooter className="text-md text-white font-semibold flex self-end h-full items-end">
+              <b>Admin Dashboard Prototype (Axure)</b>
+            </CardFooter>
+          </Card>
         </div>
       </div>
       <section
