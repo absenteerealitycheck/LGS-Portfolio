@@ -1,5 +1,5 @@
 "use client";
-import { Card, CardBody, CardFooter, Divider } from "@heroui/react";
+import { Card, CardFooter, Divider } from "@heroui/react";
 import Image from "next/image";
 import { BiSolidChevronRight } from "react-icons/bi";
 import ContactForm from "./ContactForm";
@@ -133,131 +133,150 @@ export default function PortfolioContent() {
         <h3 className="text-black text-lg font-semibold center-self my-4 px-24">
           Examples of my work
         </h3>
-        <div className="gap-2 grid xl:grid-cols-4 lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 xs:grid-cols-1 px-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 px-24">
           <Card key="0" shadow="sm">
-            <CardBody className="overflow-visible p-0">
-              <Image
-                alt="Site Example 1"
-                className="w-full object-cover h-[140px]"
-                radius="lg"
-                shadow="sm"
-                src="/portfolio/dfjb-v1.jpg"
-                width={typeof window !== undefined && window?.innerWidth / 6}
-                height={typeof window !== undefined && window?.innerHeight / 18}
-              />
-            </CardBody>
+            <Image
+              alt="Site Example 1"
+              className={`w-full object-cover`}
+              radius="lg"
+              shadow="sm"
+              src="/portfolio/dfjb-v1.jpg"
+              width={typeof window !== undefined && window?.innerWidth}
+              height={typeof window !== undefined && window?.innerHeight / 2}
+            />
+
             <CardFooter className="text-md text-white font-semibold">
               <b>DFBJ Site</b>
             </CardFooter>
           </Card>
           <Card key="1" shadow="sm">
-            <CardBody className="overflow-visible p-0">
-              <Image
-                alt="Site Example 2"
-                className="w-full object-cover h-[140px]"
-                radius="lg"
-                shadow="sm"
-                src="/portfolio/locavore-v1.jpg"
-                width={typeof window !== undefined && window?.innerWidth / 6}
-                height={typeof window !== undefined && window?.innerHeight / 18}
-              />
-            </CardBody>
+            <Image
+              alt="Site Example 2"
+              className={`w-full object-cover`}
+              radius="lg"
+              shadow="sm"
+              src="/portfolio/locavore-v1.jpg"
+              width={typeof window !== undefined && window?.innerWidth}
+              height={typeof window !== undefined && window?.innerHeight / 2}
+            />
+
             <CardFooter className="text-md text-white font-semibold">
               <b>Locavore Site</b>
             </CardFooter>
           </Card>
-          <Card key="2" shadow="sm">
-            <CardBody className="overflow-visible p-0">
-              <Image
-                alt="Site Example 3"
-                className="w-full object-cover h-[140px]"
-                radius="lg"
-                shadow="sm"
-                src="/portfolio/maggiddavid-v1.jpg"
-                width={typeof window !== undefined && window?.innerWidth / 6}
-                height={typeof window !== undefined && window?.innerHeight / 18}
-              />
-            </CardBody>
+          <Card
+            key="2"
+            shadow="sm"
+            isPressable={true}
+            onPress={() =>
+              window.open("https://www.maggiddavid.net/", "_blank")
+            }
+          >
+            <Image
+              alt="Site Example 3"
+              className="w-full object-cover"
+              radius="lg"
+              shadow="sm"
+              src="/portfolio/maggiddavid-v1.jpg"
+              width={typeof window !== undefined && window?.innerWidth}
+              height={typeof window !== undefined && window?.innerHeight / 2}
+            />
+
             <CardFooter className="text-md text-white font-semibold">
               <b>Maggid David Arfa's Site</b>
             </CardFooter>
           </Card>
           <Card key="3" shadow="sm">
-            <CardBody className="overflow-visible p-0">
-              <Image
-                alt="Site Example 4"
-                className="w-full object-cover h-[140px]"
-                radius="lg"
-                shadow="sm"
-                src="/portfolio/peace-corps-voices-v1-2.jpg"
-                width={typeof window !== undefined && window?.innerWidth / 6}
-                height={typeof window !== undefined && window?.innerHeight / 18}
-              />
-            </CardBody>
+            <Image
+              alt="Site Example 4"
+              className="w-full object-cover"
+              radius="lg"
+              shadow="sm"
+              src="/portfolio/peace-corps-voices-v1-2.jpg"
+              width={typeof window !== undefined && window?.innerWidth}
+              height={typeof window !== undefined && window?.innerHeight / 2}
+            />
+
             <CardFooter className="text-md text-white font-semibold">
               <b>Peace Corps Voices Site</b>
             </CardFooter>
           </Card>
-          <Card key="4" shadow="sm">
-            <CardBody className="overflow-visible p-0">
-              <Image
-                alt="Site Example 5"
-                className="w-full object-cover h-[140px]"
-                radius="lg"
-                shadow="sm"
-                src="/portfolio/rise-v1.jpg"
-                width={typeof window !== undefined && window?.innerWidth / 6}
-                height={typeof window !== undefined && window?.innerHeight / 18}
-              />
-            </CardBody>
+          <Card
+            key="4"
+            shadow="sm"
+            isPressable={true}
+            onPress={() => window.open("https://searise.org/", "_blank")}
+          >
+            <Image
+              alt="Site Example 5"
+              className="w-full object-cover"
+              radius="lg"
+              shadow="sm"
+              src="/portfolio/rise-v1.jpg"
+              width={typeof window !== undefined && window?.innerWidth}
+              height={typeof window !== undefined && window?.innerHeight / 2}
+            />
+
             <CardFooter className="text-md text-white font-semibold">
               <b>RISE Site</b>
             </CardFooter>
           </Card>
           <Card key="5" shadow="sm">
-            <CardBody className="overflow-visible p-0">
-              <Image
-                alt="Site Example 6"
-                className="w-full object-cover h-[140px]"
-                radius="lg"
-                shadow="sm"
-                src="/portfolio/quote_machine.png"
-                width={typeof window !== undefined && window?.innerWidth / 6}
-                height={typeof window !== undefined && window?.innerHeight / 18}
-              />
-            </CardBody>
-            <CardFooter className="text-md text-white font-semibold">
+            <Image
+              alt="Site Example 6"
+              className="w-full object-cover"
+              radius="lg"
+              shadow="sm"
+              src="/portfolio/quote_machine.png"
+              width={typeof window !== undefined && window?.innerWidth}
+              height={typeof window !== undefined && window?.innerHeight / 2}
+            />
+
+            <CardFooter className="text-md text-white font-semibold flex self-end h-full items-end">
               <b>A Random Quote Machine</b>
             </CardFooter>
           </Card>
-          <Card key="6" shadow="sm">
-            <CardBody className="overflow-visible p-0">
-              <Image
-                alt="Site Example 7"
-                className="w-full object-cover h-[140px]"
-                radius="lg"
-                shadow="sm"
-                src="/portfolio/name generator.png"
-                width={typeof window !== undefined && window?.innerWidth / 6}
-                height={typeof window !== undefined && window?.innerHeight / 18}
-              />
-            </CardBody>
-            <CardFooter className="text-md text-white font-semibold">
+          <Card
+            key="6"
+            shadow="sm"
+            isPressable={true}
+            onPress={() =>
+              window.open(
+                "https://codepen.io/flawsinthevoodoo/pen/wzXZzw",
+                "_blank"
+              )
+            }
+          >
+            <Image
+              alt="Site Example 7"
+              className="w-full object-cover"
+              radius="lg"
+              shadow="sm"
+              src="/portfolio/name generator.png"
+              width={typeof window !== undefined && window?.innerWidth}
+              height={typeof window !== undefined && window?.innerHeight / 2}
+            />
+
+            <CardFooter className="text-md text-white font-semibold flex self-end h-full items-end">
               <b>A Random Hockey Name Generator</b>
             </CardFooter>
           </Card>
-          <Card key="7" shadow="sm">
-            <CardBody className="overflow-visible p-0">
-              <Image
-                alt="Site Example 8"
-                className="w-full object-cover h-[140px]"
-                radius="lg"
-                shadow="sm"
-                src="/portfolio/thematizer-v21.jpg"
-                width={typeof window !== undefined && window?.innerWidth / 6}
-                height={typeof window !== undefined && window?.innerHeight / 18}
-              />
-            </CardBody>
+          <Card
+            key="7"
+            shadow="sm"
+            isPressable={true}
+            onPress={() => window.open("https://v28a8u.axshare.com/", "_blank")}
+          >
+            <Image
+              alt="Site Example 8"
+              className="w-full object-cover"
+              radius="lg"
+              shadow="sm"
+              src="/portfolio/thematizer-v21.jpg"
+              width={typeof window !== undefined && window?.innerWidth}
+              height={typeof window !== undefined && window?.innerHeight / 2}
+            />
+
             <CardFooter className="text-md text-white font-semibold">
               <b>Thematizer Prototype (2011)</b>
             </CardFooter>

@@ -34,10 +34,10 @@ const TypingMovingText = ({ text }) => {
   });
 
   return (
-    <div className="center-content">
+    <div className="center-content inline-flex items-stretch">
       {displayedText}
       <span
-        className={`center-self inline-block w-[2px] h-6 bg-white ml-1 ${
+        className={`center-self inline-block w-[2px] bg-white ml-1 ${
           displayCursor ? "opacity-100" : "opacity-0"
         }`}
       />

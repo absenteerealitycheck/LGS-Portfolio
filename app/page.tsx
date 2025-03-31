@@ -18,7 +18,7 @@ export default function Home() {
       <div id="nav-container" className="z-80"></div>
       <BackToTopButton />
       <Toaster />
-      <main className="w-full flex min-h-screen flex-col items-center justify-between">
+      <main className="w-full flex min-h-screen flex-col items-center justify-between dark">
         <PortfolioContent></PortfolioContent>
       </main>
     </HeroUIProvider>

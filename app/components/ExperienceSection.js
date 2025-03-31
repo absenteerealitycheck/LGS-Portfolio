@@ -6,8 +6,8 @@ export default function ExperienceSection() {
     <>
       <h2 className="text-center text-3xl">Experience</h2>
       <Divider className="mt-4 mb-8 border-lime-400"></Divider>
-      <div className="px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
-        <h3 className="pb-2 uppercase font-semibold text-stone-700">
+      <div className="text-stone-700 px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
+        <h3 className="pb-2 uppercase font-semibold">
           MMSD Software Developer
         </h3>
         <h4 className="pb-1 text-sm font-semibold">July 2019 - Present</h4>
@@ -35,7 +35,7 @@ export default function ExperienceSection() {
           </li>
         </ul>
       </div>
-      <div className="px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
+      <div className="text-stone-700 px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
         <h3 className="pb-2 uppercase font-semibold text-stone-700">
           {" "}
           Product Software Engineer
@@ -56,7 +56,7 @@ export default function ExperienceSection() {
           </li>
         </ul>
       </div>
-      <div className="px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
+      <div className="text-stone-700 px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
         <h3 className="pb-2 uppercase font-semibold text-stone-700">
           UX Intern
         </h3>
@@ -81,7 +81,7 @@ export default function ExperienceSection() {
           </li>
         </ul>
       </div>
-      <div className="px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
+      <div className="text-stone-700 px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
         <h3 className="pb-2 uppercase font-semibold text-stone-700">
           New Media Intern
         </h3>
@@ -104,7 +104,7 @@ export default function ExperienceSection() {
           </li>
         </ul>
       </div>
-      <div className="px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
+      <div className="text-stone-700 px-6 pb-6 border-violet-400 border-l-1 before:absolute before:bg-gray-100 before:left-[5.5rem] before:block before:size-4 before:border-4 before:border-violet-400 before:rounded-full">
         <h3 className="pb-2 uppercase font-semibold text-stone-700">
           Web Design and Development Intern
         </h3>
