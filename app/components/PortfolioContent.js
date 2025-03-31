@@ -106,12 +106,12 @@ export default function PortfolioContent() {
               </div>
             </div>
             <p className="py-3">
-              I like creating new and accessible Front-ends and scalable and
-              efficient Back Ends. I often explore new technologies and
-              incorporate them into projects when they would be beneficial. I
-              enjoy reading technical articles and learning languages (both
-              computer and otherwise). I strongly believe that a user friendly
-              interface is essential to and will enhance every product.
+              I am a passionate and detail-oriented Full Stack Software Engineer
+              with over 10 years of experience in developing scalable web
+              applications using React, Node.js, and AWS. I specialize in
+              creating accessible front-end interfaces and efficient back-end
+              systems. I am extremely passionate about technical innovation,
+              user-friendly design, and mentoring junior developers.
             </p>
           </div>
         </div>
